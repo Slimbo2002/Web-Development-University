@@ -8,28 +8,58 @@
         <title>Home Page</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="WebDevHomePageCSS.css">
+        <link rel="stylesheet" href="WebDevStyle.css">
     </head>
     <body>
-        <div class="header">
-            <div class = "navbar">
-                <nav>
-                    <ul>
-                        <li><a href = "home.html" class = "active">Home</a></li>
-                        <li><a href = "">The Environment</a></li>
-                        <li><a href = "">Your City</a></li>
-                        <li><a href = "">And You!</a></li>
-                        <li><a href = "">Quiz</a></li>
+        <header>
+            <nav class = "navbar">
+                <ul>
+                    <li><a href = "home.html" class = "active">Home</a></li>
+                    <li><a href = "environment.html">The Environment</a></li>
+                    <li><a href = "city.html">Your City</a></li>
+                    <li><a href = "you.html">And You!</a></li>
+                    <li><a href = "">Quiz</a></li>
                     </ul>
-                </nav>
-            </div>
-
+            </nav>
             <div class = "hero">
-                <h1 class = "herotext">Insert Text Here</h1>
-                <img class ="heroimage" src = "" alt="" width="100" height="100">
+                <h1 class = "herotext">Insert Environmental Fact Here</h1>
+                <img class ="heroimage" src = "placeholder.png" alt="This is a placeholder image" width="250" height="250">
             </div>
-        </div>
+        </header>
+
+        <section class = "informationBlock1">
+            <h2 class = "title">The Mission</h2>
+            <p class ="missionStatement">
+                This is an explaination of the mission of which I care so deeply. We as an organisation want the planet to be healthier and everyone has a role to play!
+            </p>
+            <img class = "logoImg" src = "placeholder.png" alt = "This is a placeholder image" width="200" height="200">
+        </section>
         
+        <section class = "informationBlock2">
+            <h2 class = "title">What are the effects on...</h2>
+            <div class="cardContainer">
+                <div class = "card">
+                    <a href = "environment.html">
+                        <img src = "placeholder.png" alt = "This is a placeholder image" width="200" height="200">
+                        <h3>The Environment</h3>
+                    </a>
+                </div>
+                <div class = "card">
+                    <a href = "city.html">
+                        <img src = "placeholder.png" alt = "This is a placeholder image" width="200" height="200">
+                        <h3>Your City</h3>
+                    </a>
+                </div>
+                <div class = "card">
+                    <a href = "you.html">
+                        <img src = "placeholder.png" alt = "This is a placeholder image" width="200" height="200">
+                        <h3>And You!</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
         <script src="WebDevJsScript" async defer></script>
     </body>
 </html>
