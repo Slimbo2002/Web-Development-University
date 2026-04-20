@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-
-
 <html>
     <head>
         <meta charset="utf-8">
@@ -11,36 +9,75 @@
         <link rel="stylesheet" href="WebDevStyle.css">
     </head>
     <body>
-        <div class="header">
-            <div class = "navbar">
-                <nav>
-                    <ul>
-                        <li><a href = "home.html">Home</a></li>
-                        <li><a href = "environment.html">The Environment</a></li>
-                        <li><a href = "city.html" class = "active">Your City</a></li>
-                        <li><a href = "you.html">And You!</a></li>
-                        <li><a href = "">Quiz</a></li>
+        <header>
+            <nav class = "navbar">
+                <ul>
+                    <li><a href = "home.html">Home</a></li>
+                    <li><a href = "environment.html">The Environment</a></li>
+                    <li><a href = "city.html" class = "active">Your City</a></li>
+                    <li><a href = "you.html">And You!</a></li>
+                    <li><a href = "">Quiz</a></li>
                     </ul>
-                </nav>
-            </div>
+            </nav>
 
             <div class = "hero">
                 <h1 class = "herotext">Your City</h1>
+                <h2>This is a gripping attention grabber</h2>
                 <img class ="heroimage" src = "placeholder.png" alt="This is a placeholder image" width="250" height="250">
             </div>
-        </div>
 
-        <div class = "informationBlock1">
-            <h2 class = "title">The Mission</h2>
-            <p class ="missionStatement">
-                This is an explaination of the mission of which I care so deeply. We as an organisation want the planet to be healthier and everyone has a role to play!
-            </p>
-            <img class = "logoImg" src = "placeholder.png" alt = "This is a placeholder image" width="200" height="200">
-        </div>
-        
-        <div class = "informationBlock2">
+        </header>
+        <section class = "infoBlocks">
+            <div class = "informationBlock1">
+                <h2 class = "title">The Mission</h2>
+                <p class ="missionStatement">
+                    This is an explaination of the mission of which I care so deeply. We as an organisation want the planet to be healthier and everyone has a role to play!
+                </p>
+                <img class = "logoImg" src = "placeholder.png" alt = "This is a placeholder image" width="200" height="200">
+            </div>
+            
+            <div class = "informationBlock2">
+                <h2 class = "title">What are the effects on...</h2>
+                <div class="cardContainer">
+                    <div class = "card">
+                        <a href = "environment.html">
+                            <img src = "placeholder.png" alt = "This is a placeholder image" width="200" height="200">
+                            <h3>The Environment</h3>
+                        </a>
+                    </div>
+                    <div class = "card">
+                        <a href = "city.html">
+                            <img src = "placeholder.png" alt = "This is a placeholder image" width="200" height="200">
+                            <h3>Your City</h3>
+                        </a>
+                    </div>
+                    <div class = "card">
+                        <a href = "you.html">
+                            <img src = "placeholder.png" alt = "This is a placeholder image" width="200" height="200">
+                            <h3>And You!</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-        </div>
+            <div class = "informationBlock3">
+                <h2 class = "title">Test Your Knowledge!</h2>
+                <div class = "cardContainer">
+                    <div class = "card">
+                        <a href = "quiz.html">
+                            <img src = "placeholder.png" alt = "This is a placeholder image" width="200" height="200">
+                            <h3>Quiz</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <h1></h1>
+            </footer>
+        </section>
+
+
         <script src="WebDevJsScript" async defer></script>
     </body>
 </html>
