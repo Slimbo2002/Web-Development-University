@@ -1,0 +1,164 @@
+    body{
+        margin: 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    header{
+        background-color: rgb(255, 140, 0);
+        padding: 5px;
+        width: 100%;
+    }
+    
+    h1{
+        font-size: 75px;
+        max-width: 50%;
+        font-weight: bold;
+    }
+
+    h2{
+        font-size: 55px;
+        text-align: center;
+        font-weight: bold;
+    }
+     footer{
+        background-color:  rgb(255, 140, 0);
+        border-top: 3px solid black;
+    }
+
+    .navbar ul{
+        display:flex;
+        justify-content: center;
+
+        list-style-type: none;
+        margin: 10px;
+        overflow: hidden;
+    }
+
+    .navbar a{
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 15px;  
+        display: block;
+    }
+    .navbar a.active{
+        background-color: white;
+        color: rgb(255, 140, 0);
+        border-radius: 20px;
+    }
+
+    .hero{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin: 10px;
+    }
+    .heroText{
+        justify-content: flex-start;
+        flex-direction: column;
+        color: white;
+    }
+    .heroDesc{
+        align-items: flex-start;
+    }
+    .heroimage{
+        padding-right: 50px;
+    }
+    .hero p{
+        font-size: 25px;
+    }
+    .infoBlocks{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .infoBlocks > *{
+        border-top: 3px solid black;
+    }
+    .informationBlock1{
+        background-color: white;    
+    }
+    .informationBlock1 h2{
+        color: rgb(0, 197, 0);
+    }
+    .informationBlock2{
+        background-color: rgb(118, 51, 0);
+
+    }
+    .informationBlock2 h2{
+        color: white;
+    }
+    .informationBlock3{
+        background-color: white;
+    }
+    .informationBlock3 h2{
+        color: green;
+    }
+    .introText{
+        margin: 0 auto;
+        max-width: 80%;
+        text-align: center;
+        font-size: 20px;
+    }
+    .cityBuilder{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .progressBars{
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+        gap: 20px;
+        width: 25%;
+    }
+    .progressBars label{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .progressBars progress{
+        width: 100%;
+    }
+    .bar label{
+        color: white;
+    }
+    progress {
+        appearance: none;
+        -webkit-appearance: none;
+        border: 2px solid black;
+        height: 20px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    progress::-webkit-progress-bar {
+        border: 0;
+        height: 20px;
+        border-radius: 20px;
+        background-color: #eee;   /* background (empty part) */
+    }
+    progress::-webkit-progress-value {
+        border: 0;
+        height: 20px;
+        border-radius: 20px;
+        background-color: orange; /* filled part */
+    }
+    .green::-webkit-progress-value { background-color: green; }
+    .orange::-webkit-progress-value { background-color: orange; }
+    .red::-webkit-progress-value { background-color: red; }
+
+    .cardCollection{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 70%;
+
+    }
+    .card{
+        flex: 1 0 31%;
+        justify-content: center;
+        text-align: center;
+    }
+    .card h3{
+        color: white;
+    }

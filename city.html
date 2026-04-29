@@ -3,16 +3,16 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Home Page</title>
+        <title>Your City!</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="WebDevStyle.css">
+        <link rel="stylesheet" href="CSS/your_city.css">
     </head>
     <body>
         <header>
             <nav class = "navbar">
                 <ul>
-                    <li><a href = "home.html">Home</a></li>
+                    <li><a href = "home.html" >Home</a></li>
                     <li><a href = "environment.html">The Environment</a></li>
                     <li><a href = "city.html" class = "active">Your City</a></li>
                     <li><a href = "you.html">And You!</a></li>
@@ -21,63 +21,100 @@
             </nav>
 
             <div class = "hero">
-                <h1 class = "herotext">Your City</h1>
-                <h2>This is a gripping attention grabber</h2>
-                <img class ="heroimage" src = "placeholder.png" alt="This is a placeholder image" width="250" height="250">
+                <div class = "heroText">
+                    <h1 class = "herotext">Your City</h1>
+                    <p class = "heroDesc">This is a gripping attention grabber<p>
+                </div>
+                <img class ="heroimage" src = "Assets/your_city.png" alt="This is a placeholder image" width="300" height="300">
             </div>
 
         </header>
         <section class = "infoBlocks">
             <div class = "informationBlock1">
-                <h2 class = "title">The Mission</h2>
-                <p class ="missionStatement">
-                    This is an explaination of the mission of which I care so deeply. We as an organisation want the planet to be healthier and everyone has a role to play!
+                <h2 class = "title">How does your city affect the environment?</h2>
+                <p class = "introText">
+                    To live in a growing city, some things give and some things take. 
+                    Basic needs like housing and power require trade offs, the city needs to find the best balance for cost vs use. 
+                    Use the city builder and build your ideal city!
                 </p>
-                <img class = "logoImg" src = "placeholder.png" alt = "This is a placeholder image" width="200" height="200">
             </div>
             
             <div class = "informationBlock2">
-                <h2 class = "title">What are the effects on...</h2>
-                <div class="cardContainer">
-                    <div class = "card">
-                        <a href = "environment.html">
-                            <img src = "placeholder.png" alt = "This is a placeholder image" width="200" height="200">
-                            <h3>The Environment</h3>
-                        </a>
+                <h2 class = "title">Build Your Own City!</h2>
+                <div class = "cityBuilder">
+                    <div class = "cardCollection">
+                        <div class="card" data-co2="40" data-happiness="-10" data-energy="30" data-cost="60">
+                            <img class="cardImage" src="Assets/placeholder.png" width="150" height="150">
+                            <h3>Coal Power</h3>
+                        </div>
+
+                        <div class="card" data-co2="10" data-happiness="5" data-energy="0" data-cost="40">
+                            <img class="cardImage" src="Assets/placeholder.png" width="150" height="150">
+                            <h3>Roads</h3>
+                        </div>
+
+                        <div class="card" data-co2="35" data-happiness="-25" data-energy="0" data-cost="20">
+                            <img class="cardImage" src="Assets/placeholder.png" width="150" height="150">
+                            <h3>Landfill</h3>
+                        </div>
+
+                        <div class="card" data-co2="-25" data-happiness="20" data-energy="-10" data-cost="50">
+                            <img class="cardImage" src="Assets/placeholder.png" width="150" height="150">
+                            <h3>Eco Homes</h3>
+                        </div>
+
+                        <div class="card" data-co2="-30" data-happiness="10" data-energy="-20" data-cost="70">
+                            <img class="cardImage" src="Assets/placeholder.png" width="150" height="150">
+                            <h3>Solar Power</h3>
+                        </div>
+
+                        <div class="card" data-co2="-15" data-happiness="15" data-energy="0" data-cost="30">
+                            <img class="cardImage" src="Assets/placeholder.png" width="150" height="150">
+                            <h3>Cycling</h3>
+                        </div>
+
+                        <div class="card" data-co2="-10" data-happiness="25" data-energy="0" data-cost="35">
+                            <img class="cardImage" src="Assets/placeholder.png" width="150" height="150">
+                            <h3>Park</h3>
+                        </div>
+
+                        <div class="card" data-co2="-20" data-happiness="10" data-energy="-5" data-cost="45">
+                            <img class="cardImage" src="Assets/placeholder.png" width="150" height="150">
+                            <h3>Recycling Centre</h3>
+                        </div>
+
+                        <div class="card" data-co2="15" data-happiness="10" data-energy="5" data-cost="55">
+                            <img class="cardImage" src="Assets/placeholder.png" width="150" height="150">
+                            <h3>House</h3>
+                        </div>
                     </div>
-                    <div class = "card">
-                        <a href = "city.html">
-                            <img src = "placeholder.png" alt = "This is a placeholder image" width="200" height="200">
-                            <h3>Your City</h3>
-                        </a>
-                    </div>
-                    <div class = "card">
-                        <a href = "you.html">
-                            <img src = "placeholder.png" alt = "This is a placeholder image" width="200" height="200">
-                            <h3>And You!</h3>
-                        </a>
+
+                    <div class = "progressBars">
+                        <div class = "bar">
+                            <label for ="co2">CO2:</label>
+                            <progress id = "co2" class = "w23"max = 100 value = 50>50%</progress>
+                        </div>
+                        <div class = "bar">
+                            <label for ="happiness">Happiness:</label>
+                            <progress id = "happiness" max = 100 value = 50>50%</progress>
+                        </div>
+                        <div class = "bar">
+                            <label for ="energy">Energy:</label>
+                            <progress id = "energy" max = 100 value = 50>50%</progress>
+                        </div>
+                        <div class = "bar">
+                            <label for ="cost">Cost:</label>
+                            <progress id = "cost" max = 100 value = 50>50%</progress>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class = "informationBlock3">
-                <h2 class = "title">Test Your Knowledge!</h2>
-                <div class = "cardContainer">
-                    <div class = "card">
-                        <a href = "quiz.html">
-                            <img src = "placeholder.png" alt = "This is a placeholder image" width="200" height="200">
-                            <h3>Quiz</h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
             <footer>
                 <h1></h1>
             </footer>
         </section>
 
 
-        <script src="WebDevJsScript" async defer></script>
+        <script src="Scripts/WebDevJsScript.js" async defer></script>
     </body>
 </html>
