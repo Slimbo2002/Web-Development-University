@@ -162,3 +162,6 @@
     .card h3{
         color: white;
     }
+    .card.selected .cardImage {
+    filter: brightness(0.7) sepia(1) hue-rotate(80deg) saturate(3);
+    }

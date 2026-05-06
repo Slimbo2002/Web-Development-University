@@ -9,12 +9,17 @@ const cards = document.querySelectorAll(".card");
 let selectedCards = [];
 
 cards.forEach(card => {
-  card.addEventListener("click", () => {
-    if (card.classList.contains("selected")) 
+  card.addEventListener("click", updateSelected)
+});
+
+function updateSelected(){
+  const card = event.currentTarget;
+  if (card.classList.contains("selected")) 
     {
       // unselect
       card.classList.remove("selected");
       selectedCards = selectedCards.filter(c => c !== card);
+      
     } 
     else 
     {
@@ -26,8 +31,7 @@ cards.forEach(card => {
 
     console.log(selectedCards.map(c => c.dataset.id));
     updateBars();
-  });
-});
+}
 
 function updateBars() {
     let co2 = 50;
