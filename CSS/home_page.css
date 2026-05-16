@@ -54,7 +54,19 @@
         justify-content: flex-start;
         flex-direction: column;
         color: white;
-        font-size: 70px;
+        font-size: 50px;
+    }
+    .hero .quote{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .hero .author{
+        text-align: left;
+        color: white;
+        margin: 0;
+        padding: 0;
+        font-size: 50px;
     }
     .heroDesc{
         align-items: flex-start;
@@ -79,6 +91,13 @@
     .informationBlock1 h2{
         color: green;
     }
+    .missionStatement{
+        text-align: center;
+        max-width: 80%;
+        font-size: 30px;
+        margin: 0 auto;
+
+    }
     .informationBlock2{
         background-color: turquoise;
 
@@ -91,9 +110,6 @@
     }
     .informationBlock3 h2{
         color: green;
-    }
-    .missionStatement{
-        text-align: center;
     }
     .logoImg{
         display: block;
@@ -124,6 +140,9 @@
     .card img{
         border: 5px solid black;
     }
+    .informationBlock3 .quizImg{
+        border: 0;
+    }
 
     .card a:link,
     .card a:visited,
@@ -135,6 +154,5 @@
 
     footer{
         background-color: rgb(0, 197, 0);
-        min-height: 200px;
         border-top: 3px solid black;
     }
