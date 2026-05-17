@@ -1,0 +1,6 @@
+AI DISCLOSURE:
+
+AI was used in this project in a purely assistive capacity helping with debugging code, formatting references for sources and images, any queries I had for which I could not find results on Google and finally generating images for the web page. At no point was it used to generate any code or written content. The report and code was produced by myself
+
+AI used for text and bespoke google searches was Claude
+AI used for image generation was ChatGPT
